@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <nav id="main">
+            <span id="ham-menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+            <a href="#" class="logo">Kiran Kumar.</a>
+        </nav>
+    </header>
+    <section>
+        <h3 style="padding:0 40px;">Educational Details</h3>
+        <div class="container">
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <span class="stars"></span>
+                        <h2 class="java">B.Tech</h2>
+                        <p class="java">Electronics and Communications Engineering</p>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <h2>Graduation</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <span class="stars"></span>
+                        <h2 class="python">Intermediate</h2>
+                        <p class="python">MPC
+                        </p>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <h2>Intermediate</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <span class="stars"></span>
+                        <h2 class="cSharp">Class 10<sup>th</sup></h2>
+                        <p class="cSharp">General Studies</p>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <h2>Schooling</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "#bfcda2";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "rgb(200, 232, 137)";
+        }
+    </script>
+
+</body>
+
+</html>
